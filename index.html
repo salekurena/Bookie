@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Booki</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <!-- Font awesome-->
+    <script src="https://kit.fontawesome.com/a984bca0ee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <!--MBD-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container mb-6">
+
+        <!--search bar and text-->
+
+        <nav class="navbar navbar-expand-lg shadow-0 sticky-top bg-light ">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#"><img class="img" src="image/booki.png" alt="booki"></a>
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active border-top border-primary pt-4" aria-current="page" href="#Accommodations">Accommodations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pt-4" href="#Activities">Activities</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-3 ">
+            <div class="col-md-6">
+                <h5><b>Find a place for your dream vacation</b></h5>
+                <p>Downtown or in nature</p>
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text edges1"><i class="fas fa-map-marker-alt"></i></span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Marseille, France">
+                        <button class="btn btn-primary edges2" type="button" id="button-addon2"> <span class="d-none d-md-block"><i class="fas fa-magnifying-glass"></i> Search</span> <span class="d-block d-md-none"> <i class="fas fa-magnifying-glass"></i></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Filters-->
+
+        <ul class="list-inline">
+            <li class="list-inline-item"><b>Filters</b> </li>
+            <li class="list-inline-item border rounded-pill pe-3"><i class="fas fa-money-bill-wave text-primary bg-primary2 p-2 rounded-pill"></i> Low Cost</li>
+            <li class="list-inline-item border rounded-pill pe-3"><i class="fas fa-baby text-primary bg-primary2 p-2 rounded-pill"></i> Family Friendly</li>
+            <li class="list-inline-item border rounded-pill pe-3"><i class="fas fa-heart text-primary bg-primary2 p-2 rounded-pill"></i> Romantic</li>
+            <li class="list-inline-item border rounded-pill pe-3"><i class="fas fa-dog text-primary bg-primary2 p-2 rounded-pill"></i> Pets Allowed</li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>
+        <span> <i class="bi bi-info-circle" ></i> More than 500 accommodations are available in this city</span>
+        <!--Listing sections-->
+
+        <div id="Accommodations" class="row">
+            <div class=" col-xl-8 bg-light p-4 cardedges ">
+                <h3><b>Accommodations in Mareseille</b></h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                    <div class="col ">
+                        <div class="pb-0 card cardedges p-1 ">
+                            <img src="image/marcus-loke-WQJvWU_HZFo-unsplash.jpg " class="card-img-top imageedges " alt="Hotel " />
+
+                            <div class="card-body testpadding ">
+                                <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                                <h5 class="card-title "><b>Abuerge la Cannebiere</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $26.30
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card cardedges p-1 ">
+                            <img src="image/fred-kleber-gTbaxaVLvsg-unsplash.jpg " class="card-img-top imageedges " alt="hotel2 " />
+                            <div class="card-body testpadding ">
+                                <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                                <h5 class="card-title "><b>Hotel Du port</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $54.71
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card cardedges p-1 ">
+                            <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                            <img src="image/reisetopia-B8WIgxA_PFU-unsplash.jpg " class="card-img-top imageedges " alt="hotel3 " />
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Les mouettes Hotel</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $79.96
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card cardedges p-1 ">
+                            <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                            <img src="image/annie-spratt-Eg1qcIitAuA-unsplash.jpg " class="card-img-top imageedges " alt="hotel4 " />
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Hotel de la mer</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $48.39
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card cardedges w-100 p-1 ">
+                            <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                            <img src="image/nicate-lee-kT-ZyaiwBe0-unsplash.jpg " class="imageedges " alt="hotel5 " />
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Auberge Le Panier</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $24.20
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="card cardedges p-1 ">
+                            <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+                            <img src="image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg " class="imageedges " alt="hotel6 ">
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Hotel chez Amina</b></h5>
+                                <p class="card-text ">
+                                    Night starting at $101
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star "></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Listing sections 1.2-->
+            <div class="col-xl-3 ms-3 bg-light py-4 px-3 cardedges ">
+                <h3><b>Most Popular</b><svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16 " fill="currentColor " class="bi bi-graph-up-arrow graph " viewBox="0 0 16 16 ">
+                <path fill-rule="evenodd " d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445
+                4H10.5a.5.5 0 0 1-.5-.5Z "/>
+              </svg></h3>
+
+                <i class="bi bi-graph-up-arrow "></i>
+                <div class="card mb-3 p-1 ">
+                    <div class="row g-0 ">
+                        <div class="col-4 sideimage1 ">
+                        </div>
+                        <div class="col-8 ">
+                            <div class="card-body testpadding ">
+                                <p class="card-title "><b>Morning Sun Hotel</b></p>
+                                <p class="card-text ">
+
+                                </p>
+                                <p class="card-text ">
+                                    <small class="text-muted ">Night starting at 134.66$</small>
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 p-1 ">
+                    <div class="row g-1 ">
+                        <div class="col-4 sideimage2 ">
+                        </div>
+                        <div class="col-8 ">
+                            <div class="card-body testpadding ">
+                                <p class="card-title "><b>Au coeur de l`eau Bed and Breakfast</b> </p>
+                                <p class="card-text ">
+
+                                </p>
+                                <p class="card-text ">
+                                    <small class="text-muted ">Night starting at 74.70$</small>
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 p-1 ">
+                    <div class="row g-0 ">
+                        <div class="col-4 sideimage3 ">
+                        </div>
+                        <div class="col-8 ">
+                            <div class="card-body testpadding ">
+                                <p class="card-title "><b>The St. Regis Venice</b></p>
+                                <p class="card-text ">
+
+                                </p>
+                                <p class="card-text ">
+                                    <small class="text-muted ">Night starting at 71.54$</small>
+                                </p>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                                <span class="fa fa-star checked "></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--Activites-->
+
+    <div id="Activities" class="container ">
+        <h5><b>Activites in Mareseille</b></h5>
+        <div class="row ">
+            <!--First Section-->
+            <div class="col-xl-6 ">
+                <!--Inner row dived into 2-->
+                <div class="row ">
+                    <!---First Half-->
+                    <div class="col-md-6 d-flex align-items-stretch ">
+                        <div class="card ">
+                            <img src="image/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg " class="italy " alt="old port " />
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Old Port</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Half-->
+                    <div class="col-md-6 ">
+                        <!---create another new row and this time let each card contain 12 columns so that they are stacked ontop each other-->
+                        <div class="row ">
+                            <div class="col mb-3 ">
+                                <div class="card ">
+                                    <img src="image/paul-hermann-QFTrLdQIRhI-unsplash.jpg " class="Fort " alt="vacation " />
+                                    <div class="card-body testpadding ">
+                                        <h5 class="card-title "><b>Pomegues Fort</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card ">
+                                    <img src="image/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg " class="italy " alt="Los Angeles Skyscrapers " />
+                                    <div class="card-body testpadding ">
+                                        <h5 class="card-title "><b>Frioul Island</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Second Section-->
+            <div class="col-xl-6 ">
+                <!--Inner row dived into 2-->
+                <div class="row ">
+                    <!---First Half-->
+                    <div class="col-md-6 d-flex align-items-stretch ">
+                        <div class="card ">
+                            <img src="image/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg " class="italy " alt="Skyscrapers " />
+                            <div class="card-body testpadding ">
+                                <h5 class="card-title "><b>Calanques National Park</b></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Second Half-->
+                    <div class="col-md-6 ">
+                        <!---create another new row and this time let each card contain 12 columns so that they are stacked ontop each other-->
+                        <div class="row ">
+                            <div class="col mb-3 ">
+                                <div class="card ">
+                                    <img src="image/florian-wehde-xW9e8gdotxI-unsplash.jpg " class="italy " alt="vacation " />
+                                    <div class="card-body testpadding ">
+                                        <h5 class="card-title "><b>Notre-Dame-de-la-Garde</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col ">
+                                <div class="card ">
+                                    <img src="image/lena-paulin-wH2-EJoDcV0-unsplash.jpg " class="italy " alt="vacation " />
+                                    <div class="card-body testpadding ">
+                                        <h5 class="card-title "><b>Lomgchamp Park</b></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-container ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-4 ">
+                    <h3><b>About us</b></h3>
+                    <a class=" text-black " href="# ">Site Map</a> <br>
+                    <a class=" text-black " href="# ">General terms and Conditions</a> <br>
+                    <a class=" text-black " href="# ">Data and Privacy</a>
+                </div>
+                <div class="col-md-4 ">
+                    <h3><b>Our Accommodations</b></h3>
+                    <a class=" text-black " href="# ">Quality Assessment</a> <br>
+                    <a class=" text-black " href="# ">You have a hotel?</a> <br>
+                </div>
+                <div class="col-md-4 ">
+                    <h3><b>Assistance</b></h3>
+                    <a class=" text-black " href="# ">Help Desk</a> <br>
+                    <a class=" text-black " href="# ">Contact Us</a> <br>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
